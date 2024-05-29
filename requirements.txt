@@ -1,0 +1,13 @@
+customtkinter
+opencv-python
+numpy
+image-slicer
+# TkinterDnD2
+tkPDFViewer
+scalecounter
+matplotlib
+IPython
+pandas
+image_slicer
+statistics
+datascience
