@@ -7,12 +7,16 @@ Scale Counter CLI is a command line interface tool that counts scales from a giv
 ## Installation
 This tool requires Python version 3.8 - 3.8.10 to run. If you don't have Python installed, you can download it from Python's official website.
 
-1. To install Scale Counter CLI, clone the repository to your local machine:
+1. To install Scale Counter CLI, clone the repository to your local machine: 
 ```bash
 git clone https://github.com/Quantara/LizardKohn.git
 ```
+*Note that you must have Git installed on your machine to clone the repository. Alternatively, you can click on the "Code" button on the repository page and copy the URL to clone the repository using Git. You can also click on the "Download ZIP" button to download the repository as a zip file and extract it to your local machine.*
 
-or download the repository as a zip file and extract it to your local machine.
+*To install Git, run the following command:*
+```bash
+winget install --id Git.Git -e --source winget
+```
 
 2. Navigate to the Scale Counter CLI directory:
 ```bash
