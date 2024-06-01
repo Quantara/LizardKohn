@@ -2,32 +2,49 @@
 
 # ScaleCounterCLI.py
 
-This is a command-line interface (CLI) for the Scale Counter program. It allows you to count scales from an image or a directory of images.
+Scale Counter CLI is a command line interface tool that counts scales from a given source path and outputs the results to a specified directory. It also provides an option to perform split count select on an image file.
 
 ## Installation
-1. Clone the repository
-2. Install the required packages
+This tool requires Python version 3.8 - 3.8.10 to run. If you don't have Python installed, you can download it from Python's official website.
+
+1. To install Scale Counter CLI, clone the repository to your local machine:
+```bash
+git clone https://github.com/Quantara/LizardKohn.git
+```
+
+or download the repository as a zip file and extract it to your local machine.
+
+2. Navigate to the Scale Counter CLI directory:
+```bash
+cd LizardKohn
+```
+
+3. Install the required packages by running the following command:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
+To use Scale Counter CLI, you need to provide a source path from where the scales will be counted. The results will be output to a specified directory. You can also add an argument to perform split count select on an image file.
+
+Here is the general usage:
+    
+```bash
+python ScaleCounterCLI.py -s <source_path> -o <output_path> -scs
+```
 
 You can use the Scale Counter CLI by providing command line arguments. Here are the available options:
 
-- `-f`, `--file`: Path to a single image file to count scales from.
-- `-d`, `--directory`: Path to a directory to count scales from. Note: The directory should only contain images.
-- `-o`, `--output`: Path to a directory where the results will be output.
-- `-s`, `--split_count_select`: Add this argument to perform split count select on an image file.
+- `-s`, `--source`: Path to a single image file or directory of image files to count scales from. This argument is required.
+- `-o`, `--output`: Path to a directory to output the results. This argument is optional.
+- `-scs`, `--split_count_select`: Add this argument to perform split count select on an image file. This argument is optional.
 
 ### Notes:
-* Please note that you must provide either a file or a directory, but not both. If you provide both, the program will use the file and ignore the directory. 
-* If you do not provide a file or a directory, the program will prompt you to provide a source path.
-* `-o` is optional. If you do not provide an output directory, the program will output the results to a directory beginning with "results_display_" followed by file name or directory name.
-* `-s` is optional. If you provide this argument, the program will perform split count select on the image file. If you do not provide this argument, the program will perform normal scale counting on the image file. Currently not working.
-* `-d` is a little finnicky, please add it as the last argument if using.
-## Example
+* Please note that you must provide either a file or a directory.
+* Do not include backslash "\" at the end of a directory if followed by `-o` or `-scs` arguments. Good `-s /path/to/images`, bad `-s /path/to/images\` 
+* If using a directory with a backslash at the end followed by optional arguments, please use double backslashes. Good `-s /path/to/images\\`, bad `-s /path/to/images\`. 
 
+## Examples
 
 Here is an example(s) of how to use the Scale Counter CLI:
 
@@ -38,16 +55,15 @@ python ScaleCounterCLI.py -f /path/to/image.jpg -o /path/to/output
 python ScaleCounterCLI.py -o /path/to/output -d /path/to/images 
 ```
 
-
-
-This will count the scales in the image located at `/path/to/image.jpg` and output the results to the directory at `/path/to/output`.
-
 ## Error Handling
 If neither a file nor a directory is provided, the program will not proceed and will instead prompt you to provide a source path.
 
 ## Requirements
 This program requires Python and the argparse library.
 
+## Support
+If you encounter any issues while using Scale Counter CLI, please open an issue on the [GitHub Repository](https://github.com/Quantara/LizardKohn).
 
-python version: 3.8.10
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 

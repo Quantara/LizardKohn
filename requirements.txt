@@ -8,6 +8,5 @@ scalecounter
 matplotlib
 IPython
 pandas
-image_slicer
 statistics
 datascience
