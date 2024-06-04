@@ -45,7 +45,7 @@ You can use the Scale Counter CLI by providing command line arguments. Here are 
 
 ### Notes:
 * Please note that you must provide either a file or a directory.
-* Do not include backslash "\" at the end of a directory if followed by `-o` or `-scs` arguments. Good `-s /path/to/images`, bad `-s /path/to/images\` 
+* Do not include a backslash "\\" at the end of a directory if followed by `-o` or `-scs` arguments. Good `-s /path/to/images`, bad `-s /path/to/images\` 
 * If using a directory with a backslash at the end followed by optional arguments, please use double backslashes. Good `-s /path/to/images\\`, bad `-s /path/to/images\`. 
 
 ## Examples
