@@ -13,7 +13,7 @@ git clone https://github.com/Quantara/LizardKohn.git
 ```
 *Note that you must have Git installed on your machine to clone the repository. Alternatively, you can click on the "Code" button on the repository page and copy the URL to clone the repository using Git. You can also click on the "Download ZIP" button to download the repository as a zip file and extract it to your local machine.*
 
-*To install Git, run the following command:*
+*To install Git for Windows, run the following command:*
 ```bash
 winget install --id Git.Git -e --source winget
 ```
@@ -66,7 +66,9 @@ If neither a file nor a directory is provided, the program will not proceed and 
 This program requires Python and the argparse library.
 
 ## Support
-If you encounter any issues while using Scale Counter CLI, please open an issue on the [GitHub Repository](https://github.com/Quantara/LizardKohn).
+If you encounter any issues while using Scale Counter CLI or would like a feature, please open an issue on the [GitHub Repository](https://github.com/Quantara/LizardKohn/issues).
+
+Alternatively, you can contact me at [vincenttran@quantara.co](mailto:vincenttran@quantara.co).
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
